@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog - Home</title>
+  <link rel="stylesheet" href="/css/style.css"> <!-- Include your CSS file -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+      </ul>
+    </nav>
+    <h1>Tech Blog</h1>
+  </header>
+  
+  <main>
+    <section class="posts">
+      <h2>Recent Posts</h2>
+      {{#each posts}}
+        <div class="post">
+          <h3>{{this.title}}</h3>
+          <p>{{this.content}}</p>
+          <p>Posted by {{this.User.username}} on {{this.createdAt}}</p>
+        </div>
+      {{/each}}
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; {{currentYear}} Tech Blog</p>
+  </footer>
+</body>
+</html>

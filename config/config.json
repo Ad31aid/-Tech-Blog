@@ -1,0 +1,21 @@
+{
+        "development": {
+          "username": "your_mysql_username",
+          "password": "your_mysql_password",
+          "database": "tech_blog_db",
+          "host": "localhost",
+          "dialect": "mysql"
+        },
+        "test": {
+          "username": "your_mysql_username",
+          "password": "your_mysql_password",
+          "database": "tech_blog_db",
+          "host": "localhost",
+          "dialect": "mysql"
+        },
+        "production": {
+          "use_env_variable": "JAWSDB_URL",
+          "dialect": "mysql"
+        }
+      }
+      
